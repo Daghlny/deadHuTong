@@ -1,0 +1,159 @@
+/* author: Ritchie Lee        */
+/* email:  daghlny@gmail.com  */
+
+#main-panel {
+	width: 50%;
+	min-width: 700px;
+	margin-left: 25%;
+	margin-right: 25%;
+	background: #dddddd;
+	padding: 50px;
+	float: left;
+	overflow: hidden;
+}
+
+#content-panel {
+	float: left;
+	width: 80%;
+}
+
+/*标题栏*/
+#head-parent-panel {
+	background-color: #404040;
+}
+
+#head-panel {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#head-img-panel {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#head-img {
+	width: 70px;
+	height: 70px;
+}
+
+#name-panel{
+	float: left;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+#name-text {
+	font-size: 23px;
+	font-family: consolas;
+	color: #fff;
+}
+
+/*侧边栏*/
+#side-panel {
+	width: 20%;
+	min-width: 140px;
+	height: 500px;
+	float: left;
+	background-color: #555555;
+}
+
+#side-head-panel {
+	margin-top: 60px;
+	width: 80%;
+	margin-left: 10%;
+	padding: 0;
+}
+
+#side-head-img{
+	padding-left: 10%;
+}
+
+#side-head-img img {
+	width: 120px;
+	width: 120px;
+}
+
+#side-head-saying-panel {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#side-head-saying-panel span {
+	font-size: 15px;
+	font-style: italic;
+}
+
+/*目录栏*/
+#items-panel {
+	margin-left: 20px;
+	width: 80%;
+	overflow: hidden;
+}
+
+#items-menu{
+	margin-top: 25px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	overflow: hidden;
+	list-style: none;
+}
+
+.banner-item {
+	margin: 5px 20px 0px 20px;
+	border: 0;
+	padding: 0;
+	padding-top: 5px;
+	background: #707070; 
+	width: 70px;
+	height: 25px;
+/*	display: inline;*/
+	float: left;
+	text-align: center;
+}
+
+#banner-item-index {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+
+.banner-item:hover {
+	background: #757575;
+	cursor: pointer;
+}
+
+.banner-item a {
+	color: #fff;
+	font-size: 15px;
+
+	text-decoration: none;
+}
+
+.selected-banner-item {
+	height: 30px;
+	padding-top: 5px;
+	margin-top: 0px;
+	overflow: hidden;
+	background-color: #f4f4ec;
+}
+
+.selected-banner-item:hover {
+	background-color: #f4f4ec;
+}
+
+.selected-banner-item a {
+	display: block;
+	padding-top: 5px;
+	color: #000;
+}
+
+/*实际的内容展示panel*/
+#real-panel{
+	background-color: #f4f4ec;
+	height: 400px;
+}
