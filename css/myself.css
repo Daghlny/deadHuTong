@@ -1,0 +1,27 @@
+
+/*展示实际内容*/
+.myself-real-content-panel {
+	width: 80%;
+	min-width: 450px;
+	margin-left: 10%;
+	margin-top: 50px;
+	background-color: #dddddd;
+}
+
+.myself-real-content-text-panel {
+	width: 90%;
+	padding: 20px 20px 20px 20px;
+}
+
+.myself-real-content-text-panel p {
+	font-size: 15px;
+	font-family: consolas,Lora,楷体,微软雅黑, consolas;
+}
+
+.myself-real-content-text-panel p a{
+	font-style: italic;
+}
+
+#info-myself-intro-panel {
+	margin-bottom: 30px;
+}
