@@ -5,9 +5,34 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Daghlny's personal web blogs">
 	<link rel="stylesheet" href="css/normal-style.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript">
+
+		function init_adjust_size(){
+			var whole_height = $("#real-panel").height();
+			$("#side-panel").css({'height': whole_height+153+'px'});
+		}
+		window.onload = function(){
+			init_adjust_size();
+		}
+
+		$(window).resize(function(){
+			//resize the height side panel's size
+			var whole_height = $("#real-panel").height();
+			$("#side-panel").css({'height': whole_height+153+'px'});
+
+			// recompute the head image's background in side panel part's size
+			var cw = $("#side-panel").width();
+			$("#supply-color-panel").css({'width': cw+'px'});
+
+			
+
+		});
+	</script>
 </head>
 <body bgcolor="#dddddd">
-	<div id="main-panel">
+	<div id="main-panel"> <!--content show area-->
 		<div id="content-panel">
 			
 			<div id="head-parent-panel">
@@ -41,7 +66,9 @@
 
 		<!-- 侧边栏-->
 		<div id="side-panel">
-			<div id="side-head-panel">
+			<div id="supply-color-panel" class="side-child-panel">
+			</div>
+			<div id="side-head-panel" class="side-child-panel">
 				<div id="side-head-img">
 					<img src="img/head.png" alt="Daghlny's 自畫像">
 				</div>
@@ -49,9 +76,21 @@
 					<span id="side-head-saying">I'm the king of the world.</span>
 				</div>
 			</div>
-
+			<div class="side-child-panel">
+				<div id="side-myself-intro-panel">
+					<!--
+					<p>喜欢红魔，喜欢T9和小贝，喜欢miwa，喜欢麻酱，爱吃火锅，爱听广播，爱玩FIFA和实况，爱看古龙的小说，暗恋椎名真白和五更琉璃。</p>
+				-->
+				</div>
+			</div>
 		</div>
 
+	</div> <!--content show area--> <!-- main-panel -->
+	<div id = "bottom-info-panel">
+		<div id="beian-info-panel">
+			<span><a target="blank" href="http://www.miitbeian.gov.cn/">鄂ICP备16005839号</a></span>
+		</div>
 	</div>
+
 </body>
 </html>

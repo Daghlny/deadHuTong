@@ -1,16 +1,22 @@
 /* author: Ritchie Lee        */
 /* email:  daghlny@gmail.com  */
 
+body {
+	text-align: center;
+}
+
 #main-panel {
 	width: 50%;
 	min-width: 700px;
-	margin-left: 25%;
-	margin-right: 25%;
+	/*margin-left: 25%;
+	margin-right: 25%; */
+	margin: 0 auto;
 	background: #dddddd;
 
 	padding: 50px;
-	float: left;
+	/*float: left;*/
 	overflow: hidden;
+	text-align: left;
 }
 
 #content-panel {
@@ -59,7 +65,8 @@
 	min-width: 140px;
 	height: 500px;
 	float: left;
-	background-color: #555555;
+	/*background-color: #555555;*/
+	background-color: #f4f4ec;
 }
 
 #side-head-panel {
@@ -71,11 +78,14 @@
 
 #side-head-img{
 	padding-left: 10%;
+	padding-right: 10%;
 }
 
 #side-head-img img {
-	width: 120px;
-	width: 120px;
+	position: relative;
+	width: 100%;
+	width: 100%;
+	z-index: ;
 }
 
 #side-head-saying-panel {
@@ -84,8 +94,29 @@
 }
 
 #side-head-saying-panel span {
-	font-size: 15px;
+	color: #404040;
+	font-size: 13px;
 	font-style: italic;
+	font-family: Arial;
+}
+
+#supply-color-panel {
+	background-color: #404040;
+	height: 153px;
+	width: 182.5px;
+	position: absolute;
+	z-index: 0;
+}
+
+#side-myself-intro-panel {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 40px;
+}
+
+#side-myself-intro-panel p{
+	font-family: STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”;
+	font-size: 13px;
 }
 
 /*目录栏*/
