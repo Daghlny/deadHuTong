@@ -200,3 +200,31 @@ body {
 	overflow: hidden;
 	/*height: 400px;*/
 }
+
+.article-abstract-block {
+	margin: 50px 70px;
+	background-color: #dddddd;
+	overflow: hidden;
+}
+
+.article-abstract-title-block {
+	width: 100%;
+	margin: 20px 20px;
+}
+
+.article-abstract-title {
+	font-family: consolas,Lora,楷体,微软雅黑, consolas;
+	font-size: 20px;
+	color: #67a88f;
+}
+
+.article-abstract-content-block {
+	width: 100%;
+	margin: 10px 20px;
+
+}
+
+.article-abstract-content {
+	font-family: consolas,Lora,楷体,微软雅黑, consolas;
+	font-size: 14px;
+}
