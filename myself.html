@@ -7,14 +7,11 @@
 	<link rel="stylesheet" href="css/normal-style.css">
 	<link rel="stylesheet" href="css/myself.css">
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="dHTpage.js"></script>
 	<script type="text/javascript">
 
-		function init_adjust_size(){
-			var whole_height = $("#real-panel").height();
-			$("#side-panel").css({'height': whole_height+153+'px'});
-		}
 		window.onload = function(){
-			init_adjust_size();
+			adjust_panel_height();
 		}
 
 		$(window).resize(function(){
@@ -25,10 +22,8 @@
 			// recompute the head image's background in side panel part's size
 			var cw = $("#side-panel").width();
 			$("#supply-color-panel").css({'width': cw+'px'});
-
-			
-
 		});
+		
 	</script>
 </head>
 <body bgcolor="#dddddd">

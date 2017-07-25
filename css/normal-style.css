@@ -19,6 +19,7 @@ body {
 	text-align: left;
 }
 
+/* 主要内容的容器panel */
 #content-panel {
 	float: left;
 	width: 80%;
@@ -28,11 +29,13 @@ body {
 /*标题栏*/
 #head-parent-panel {
 	background-color: #404040;
+	height: 160px;
 }
 
 #head-panel {
 	margin: 0;
 	padding: 0;
+	padding-bottom: 6px;
 	overflow: hidden;
 }
 
@@ -77,8 +80,11 @@ body {
 }
 
 #side-head-img{
+	position: absolute;
+	/*
 	padding-left: 10%;
 	padding-right: 10%;
+	*/
 }
 
 #side-head-img img {
@@ -102,9 +108,9 @@ body {
 
 #supply-color-panel {
 	background-color: #404040;
-	height: 153px;
-	width: 182.5px;
-	position: absolute;
+	height: 160px;
+	width: 100%;
+	position: relative;
 	z-index: 0;
 }
 
@@ -121,7 +127,11 @@ body {
 
 /*目录栏*/
 #items-panel {
+	position: relative;
+	bottom: 0px;
 	margin-left: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 	width: 80%;
 	overflow: hidden;
 }
