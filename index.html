@@ -8,14 +8,11 @@
 	<link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="icon.ico" type="image/x-icon" />
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="dHTpage.js"></script>
 	<script type="text/javascript">
 
-		function init_adjust_size(){
-			var whole_height = $("#real-panel").height();
-			$("#side-panel").css({'height': whole_height+153+'px'});
-		}
 		window.onload = function(){
-			init_adjust_size();
+			adjust_panel_height();
 		}
 
 		$(window).resize(function(){
