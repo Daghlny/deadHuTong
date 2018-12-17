@@ -10,52 +10,14 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" src="dHTpage.js"></script>
 	<script type="text/javascript">
-		function add_article_abstract(title, content, time = "") {
-			var template_dom = "<div class=\"article-abstract-block\"><div class=\"article-abstract-title-block\"><p class=\"article-abstract-title\">"+title+"</p></div><div class=\"article-abstract-content-block\"><p class=\"article-abstract-content\">"+content+"<a href=\"http://www.baidu.com\" class=\"readmore-link\" id=\"readmore\"><span>more>> </span></a></p></div><div class=\"article-abstract-time-block\"><span class=\"article-abstract-time\">Created at " + time + "</span></div></div>"
-			var void_container = document.createElement("div")
-			void_container.innerHTML = template_dom
-			var parent_dom = document.getElementById("real-panel")
-			parent_dom.appendChild(void_container)
-		}
-
-		function get_article_abstracts_by_range(start, end) {
-			var all_abstracts = []
-			$.ajax({
-				url: "http://localhost:7777/server/nn",
-				type: "GET",
-				success: function(data) {
-					all_abstracts = JSON.parse(data)
-				},
-				error: function(XMLHttpRequest, textStatus, errorThrown) {
-					alert("请求对象XMLHttpRequest: "+XMLHttpRequest);
-					alert("错误类型textStatus: "+textStatus);
-					alert("异常对象errorThrown: "+errorThrown);
-				}
-			})
-		}
 
 		$(document).ready(function(){
 			//alert("Happy Everyday~")
 			var data_to_backend = "hello back."
-			add_article_abstract("nima", "sile", "2018-12-25")
-			/*
-			$.ajax({
-				url: "http://localhost:7777/server/nn",
-				type: "GET",
-				success: function(data) {
-					alert(data);
-				},
-				error: function(XMLHttpRequest, textStatus, errorThrown) {
-					alert("请求对象XMLHttpRequest: "+XMLHttpRequest);
-					alert("错误类型textStatus: "+textStatus);
-					alert("异常对象errorThrown: "+errorThrown);
-				}
-			})
-			*/
 		})
 	</script>
 </head>
-<body bgcolor="#dddddd">
+<body bgcolor="#dddddd" style="background-image:url(img/background.png)">
 	<div id="main-panel"> <!--content show area-->
 		<div id="content-panel">
 			
