@@ -1,6 +1,10 @@
 
 // 在首页 real-panel 里插入一个文章摘要
 function add_article_abstract(title, content, time = "") {
+	if (time == "") {
+		var today_date = new Date()
+		time = "20"+today_date.getYear()%100+"-"+(today_date.getMonth()+1)+"-"+today_date.getDate()
+	}
 	var template_dom = "<div class=\"article-abstract-block\"><div class=\"article-abstract-title-block\"><p class=\"article-abstract-title\">"+title+"</p></div><div class=\"article-abstract-content-block\"><p class=\"article-abstract-content\">"+content+"<a href=\"http://www.baidu.com\" class=\"readmore-link\" id=\"readmore\"><span>more>> </span></a></p></div><div class=\"article-abstract-time-block\"><span class=\"article-abstract-time\">Created at " + time + "</span></div></div>"
 	var void_container = document.createElement("div")
 	void_container.innerHTML = template_dom

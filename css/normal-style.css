@@ -24,12 +24,14 @@ body {
 	left: 10%;
 	width: 100%;
 	min-width: 560px;
+	opacity:0.85;
 }
 
 /*标题栏*/
 #head-parent-panel {
 	background-color: #404040;
 	height: 160px;
+	opacity: 1;
 }
 
 #head-panel {
